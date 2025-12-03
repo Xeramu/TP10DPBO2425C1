@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kitchen Management</title>
+    <title>Pemesanan Tiket</title>
     <style>
         body {
             font-family: sans-serif;

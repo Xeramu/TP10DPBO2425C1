@@ -18,9 +18,9 @@
         <tr>
             <td class="border px-3 py-2"><?= $p['nama_user']; ?></td>
             <td class="border px-3 py-2"><?= $p['nama_konser']; ?></td>
-            <td class="border px-3 py-2"><?= $p['kategori']; ?></td>
+            <td class="border px-3 py-2"><?= $p['kategori_tiket']; ?></td>
             <td class="border px-3 py-2"><?= $p['jumlah']; ?></td>
-            <td class="border px-3 py-2">Rp <?= number_format($p['total']); ?></td>
+            <td class="border px-3 py-2">Rp <?= number_format($p['total_harga']); ?></td>
             <td class="border px-3 py-2">
                 <a href="index.php?entity=pemesanan&action=edit&id=<?= $p['pesanan_id']; ?>">Edit</a> |
                 <a href="index.php?entity=pemesanan&action=delete&id=<?= $p['pesanan_id']; ?>" 

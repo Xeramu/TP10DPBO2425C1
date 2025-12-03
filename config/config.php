@@ -2,9 +2,9 @@
 class Database
 {
     private $host = "localhost";
-    private $database = "";
+    private $database = "db_tiket";
     private $username = "root";
-    private $password = "db_tiket";
+    private $password = "";
     private $conn;
 
     public function getConnection()

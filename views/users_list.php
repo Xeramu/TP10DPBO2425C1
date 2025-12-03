@@ -11,7 +11,7 @@
         <th>Actions</th>
     </tr>
 
-    <?php foreach ($usersList as $u): ?>
+    <?php foreach ($userList as $u): ?>
         <tr>
             <td class="border px-4 py-2"><?= htmlspecialchars($u['nama']); ?></td>
             <td class="border px-4 py-2"><?= htmlspecialchars($u['email']); ?></td>
