@@ -1,5 +1,5 @@
 <?php
-require_once "config/Database.php";
+require_once "config/config.php";
 
 class Tiket
 {
@@ -75,4 +75,20 @@ class Tiket
         $stmt->bindParam(":id", $id);
         return $stmt->execute();
     }
+
+    public function getByKonser($konserId)
+    {
+        $query = "SELECT t.*, k.nama_konser, k.lokasi, k.tanggal
+                FROM tiket t
+                LEFT JOIN konser k ON t.konser_id = k.konser_id
+                WHERE t.konser_id = :konserId
+                ORDER BY t.harga ASC";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":konserId", $konserId);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
