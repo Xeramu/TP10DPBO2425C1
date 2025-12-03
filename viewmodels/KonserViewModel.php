@@ -1,5 +1,5 @@
 <?php
-require_once 'models/konser.php';
+require_once __DIR__ . "/../models/konser.php";
 
 class KonserViewModel
 {

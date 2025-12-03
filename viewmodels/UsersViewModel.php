@@ -1,5 +1,5 @@
 <?php
-require_once 'models/users.php';
+require_once __DIR__ . "/../models/users.php";
 
 class UserViewModel
 {
