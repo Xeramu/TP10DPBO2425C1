@@ -92,9 +92,9 @@
 
     <nav>
         <a href="index.php?entity=konser">Konser</a>
-        <a href="index.php?entity=pemesanan">Pemesanan</a>
         <a href="index.php?entity=tiket">Tiket</a>
         <a href="index.php?entity=users">Users</a>
+        <a href="index.php?entity=pemesanan">Pemesanan</a>
     </nav>
 
     <hr>
