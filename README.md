@@ -76,7 +76,7 @@
       - buat manggil viewmodel sesuai kebutuhan
       - buat manggil file view sesuai operasi
         
-3. Alur
+2. Alur
    - user akses index.php
    - index.php baca parameter
    - viewmodel dipanggil index.php
@@ -90,7 +90,7 @@
 
 
 
-5. Dokumentasi
+3. Dokumentasi
    
 
 https://github.com/user-attachments/assets/2251a576-2a40-484c-a8a8-666270851edb
