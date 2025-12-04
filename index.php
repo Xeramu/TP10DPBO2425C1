@@ -1,5 +1,4 @@
 <?php
-// Import semua ViewModel
 require_once __DIR__ . '/viewmodels/KonserViewModel.php';
 require_once __DIR__ . '/viewmodels/TiketViewModel.php';
 require_once __DIR__ . '/viewmodels/PemesananViewModel.php';
@@ -10,11 +9,9 @@ $entity = isset($_GET['entity']) ? $_GET['entity'] : 'konser';
 $action = isset($_GET['action']) ? $_GET['action'] : 'list';
 
 
-/*
-|--------------------------------------------------------------------------
-| 1. KONCER
-|--------------------------------------------------------------------------
-*/
+// ===============
+// konser
+// ===============
 if ($entity === 'konser') {
 
     $konserVM = new KonserViewModel();
@@ -63,11 +60,9 @@ if ($entity === 'konser') {
     }
 
 
-/*
-|--------------------------------------------------------------------------
-| 2. TIKET
-|--------------------------------------------------------------------------
-*/
+// ===============
+// tiket
+// ===============
 } elseif ($entity === 'tiket') {
 
     $tiketVM = new TiketViewModel();
@@ -119,11 +114,9 @@ if ($entity === 'konser') {
     }
 
 
-/*
-|--------------------------------------------------------------------------
-| 3. PEMESANAN
-|--------------------------------------------------------------------------
-*/
+// ===============
+// pemesanan
+// ===============
 } elseif ($entity === 'pemesanan') {
 
     $userVM = new UserViewModel();
@@ -178,11 +171,9 @@ if ($entity === 'konser') {
     }
 
 
-/*
-|--------------------------------------------------------------------------
-| 4. USERS
-|--------------------------------------------------------------------------
-*/
+// ===============
+// Users
+// ===============
 } elseif ($entity === 'users') {
 
     $userVM = new UserViewModel();
